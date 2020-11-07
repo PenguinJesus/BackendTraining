@@ -1,0 +1,17 @@
+4  types of NoSQL:
+- Document (e.g. MongoDB)
+- key-value (Redis)
+- column (cassandra)
+- graph (Neo4J)
+
+ObjectId in MongoDB:
+first 4 bytes = timestamp
+next 3 bytes = Machine ObjectId
+next 2 bytes = Proc. ID
+last 3 bytes =increment ID
+
+EXTRA: id.getTimestamp() returns the timestamp in ISO Date format
+
+
+Bind mongo db path:
+mongod --dbpath=data --bind_ip 127.0.0.1
