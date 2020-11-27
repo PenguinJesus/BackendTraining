@@ -86,6 +86,7 @@ router.get('/logout', (req, res)=>{
 });
 
 
+//https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 router.get('/facebook/token', passport.authenticate('facebook-token'), (req,res) => {
   if(req.user){
     var token = authenticate.getToken({ _id: req.user._id});
